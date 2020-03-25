@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:layout_marginHorizontal="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/background_color"
+            android:layout_width="@dimen/cell_icon_background_size"
+            android:layout_height="@dimen/cell_icon_background_size"
+            android:layout_margin="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@drawable/gradient_alive" />
+
+        <View
+            android:id="@+id/foreground_icon"
+            android:layout_width="@dimen/cell_icon_foreground_size"
+            android:layout_height="@dimen/cell_icon_foreground_size"
+            android:background="@drawable/ic_alive"
+            app:layout_constraintBottom_toBottomOf="@id/background_color"
+            app:layout_constraintEnd_toEndOf="@+id/background_color"
+            app:layout_constraintStart_toStartOf="@id/background_color"
+            app:layout_constraintTop_toTopOf="@+id/background_color" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title"
+            style="?attr/textAppearanceHeadline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:lines="1"
+            android:textColor="@color/black"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/background_color"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/alive_title" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/description"
+            style="?attr/textAppearanceBody2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:textColor="@color/black"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="@+id/title"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/title"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            tools:text="@string/alive_description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,12 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/background_gradient</item>
+    </style>
+
+    <style name="Kek" parent="TextAppearance.MaterialComponents.Body1"></style>
+
+</resources>

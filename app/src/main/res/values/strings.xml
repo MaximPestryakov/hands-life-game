@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Hands</string>
+
+    <string name="list_title">Клеточное наполнение</string>
+    <string name="generate_cell">Сотворить</string>
+
+    <string name="dead_title">Мёртвая</string>
+    <string name="dead_description">или прикидывается</string>
+
+    <string name="alive_title">Живая</string>
+    <string name="alive_description">и шевелится!</string>
+
+    <string name="life_title">Жизнь</string>
+    <string name="life_description">Ку-ку!</string>
+</resources>
